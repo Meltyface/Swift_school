@@ -33,7 +33,7 @@ let shape3 = calculateArea(length: 4, width: 4)
 var bankAccountBalance = 500.00
 var sigourneyWeaverAlienStomperShoes = 350.00
 
-func purchaseItem(currentBalance: inout Double, itemPrice: Double){
+func purchaseItem(currentBalance: inout Double, itemPrice: Double){ //inout lets the "currentBalance" constant be returned
     if itemPrice <= currentBalance {
         currentBalance = currentBalance - itemPrice
         print("Purchased item for: $\(itemPrice)")
@@ -42,7 +42,7 @@ func purchaseItem(currentBalance: inout Double, itemPrice: Double){
     }
 }
 
-purchaseItem(currentBalance: &bankAccountBalance, itemPrice: sigourneyWeaverAlienStomperShoes)
+purchaseItem(currentBalance: &bankAccountBalance, itemPrice: sigourneyWeaverAlienStomperShoes) // Adding "&" to the front of the constant modifies the variable after the function has run.
 
 var retroLunchBox = 40.00
 
