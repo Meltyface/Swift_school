@@ -32,6 +32,26 @@ students.remove(at: 2) // José has been removed.
 
 print (students)
 
+var stringArray = [String]()
+
+var doubleArray: [Double] = [23.775, 55.10, 821.14, 39.1652]
+
+var inferredArray = [1.0, 2, 3.00, 4.5, 6.000]
+
+stringArray.append("value0")
+doubleArray.append(4142.82)
+inferredArray.append(12)
+
+stringArray.remove(at: 0)
+doubleArray.remove(at: 1)
+inferredArray.remove(at: 4)
+
+inferredArray.removeAll()
+
+var repeatingArray = Array(repeating: 1, count: 10)
+var incrementingArray = Array(0...5)
+
+
 
 
 

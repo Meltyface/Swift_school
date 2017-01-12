@@ -43,3 +43,22 @@ for salary in salaries { // 'For... each' loop. Built-in end condition, whereas 
     print ("Salary: \(salary)")
 }
 
+var oddNumbers = Array<Int>()
+
+for i in 0...50 {
+    oddNumbers.append(i*2 - 1)
+}
+
+print (oddNumbers)
+
+var sums = Array<Int>()
+
+for element in oddNumbers {
+    sums.append(element + 5)
+}
+
+var i = 0
+repeat {
+    print ("The sum is: \(sums[i])")
+    i += 1
+} while (i < sums.count)
